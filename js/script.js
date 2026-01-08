@@ -21,4 +21,31 @@
 
 Проверить, чтобы все работало без ошибок в консоли */
 
-const numberOfFilms = +promt('Сколько фильмов вы уже посмотрели?', '');
+const numberOfFilms = +prompt('Сколько фильмов вы уже посмотрели?', '');
+
+const personalMovieDB = {
+    count: numberOfFilms,
+    movies: {},
+    actors: {},
+    genres: [],
+    privat: false
+};  
+
+const a = prompt('Один из последних просмотренных фильмов?', ''),
+      b = prompt('На сколько оцените его?', ''),  
+      c = prompt('Один из последних просмотренных фильмов?', ''),
+      d = prompt('На сколько оцените его?', '');   
+      
+personalMovieDB.movies[a] = b;
+personalMovieDB.movies[c] = d;
+
+console.log(personalMovieDB);
+
+// const arrObj = {
+//     a: 'a',
+//     1: 'b',
+//     2: 'c'
+// };
+// const b = 'b';
+// // arrObj.b = '1234';
+// arrObj[b] = '1234';
